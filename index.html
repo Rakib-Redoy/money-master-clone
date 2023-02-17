@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+        <h1 class="text-4xl text-center font-bold">Money Master</h1>
+        <div class="w-full text-center mt-10">
+            <div>
+                <h3 class="text-2xl font-semibold">Income</h3>
+                <p class="inline-block text-lg mr-3">Income:</p>
+                <input id="income-field" type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                <br>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold ">Expenses</h3>
+                <div class="py-2">
+                    <p class="inline-block text-lg mr-3">Rent:</p>
+                    <input id="rent-field" type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                    <br>
+                </div>
+                <div class="py-2">
+                    <p class="inline-block text-lg mr-3">Food:</p>
+                    <input id="food-field" type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                    <br>
+                </div>
+                <div class="py-2">
+                    <p class="inline-block text-lg mr-3">Cloth:</p>
+                    <input id="cloth-field" type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                    <br>
+                </div>
+                <button id="calculate-btn" class="btn btn-wide mx-auto my-3">CALCULATE</button>
+            </div>
+            <div>
+                <h2  class="text-2xl font-semibold mb-3">Total Expenses: <span id="total-expense">0000</span> </h2>
+                <h2  class="text-2xl font-semibold mb-3">Remaining Balance: <span id="remain-balance">0000</span></h2>
+            </div>
+            <div>
+                <p class="inline-block">Save : </p>
+                <input id="percentage-field" type="text" placeholder="How many % you want to save...." class="input input-bordered input-sm w-2/5  max-w-xs" />
+            </div>
+            <button id="save-btn" class="btn btn-wide mx-auto my-3">SAVE</button>
+            <h3 id="save-field" class="text-2xl font-semibold mb-3">Total save <span>000</span></h3>
+        </div>
+        
+        <script src="money.js"></script>
+    </body>
+</html>
